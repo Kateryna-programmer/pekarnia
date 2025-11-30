@@ -1,0 +1,369 @@
+/* general styles */
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/poppins-v24-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v24-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/poppins-v24-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/poppins-v24-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/poppins-v24-latin-900.woff2') format('woff2');
+}
+
+:root {
+  --color-brand-green: #819b57;
+  --color-brand-dark-green: #465929;
+  --color-text-light: #faf4ea;
+  --color-text-dark: #31261a;
+  --color-ivory: #a18268;
+  --color-beige: #cfcfbc;
+}
+
+body {
+  color: var(--color-text-dark);
+  background: var(--color-text-light);
+  line-height: 1.5;
+  margin: 0;
+}
+
+* {
+  margin-top: 0;
+
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.body-small {
+  font-size: 14px;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li,
+button {
+  font-family: 'Poppins', sans-serif;
+}
+h1 {
+  font-size: 124px;
+  font-weight: 900;
+}
+h2 {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+h3 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h3.title-small {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+h4.semibold {
+  font-weight: 600;
+}
+h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+h6 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+address {
+  font-style: normal;
+}
+.nav-link {
+  color: var(--color-text-light);
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: var(--color-brand-green);
+}
+
+.btn {
+  color: var(--color-text-light);
+  background-color: var(--color-brand-green);
+  font-size: 18px;
+  border-radius: 8px;
+  border: 2px solid var(--color-brand-green);
+  font-weight: 600;
+  padding: 16px 32px;
+}
+
+.btn:hover {
+  color: var(--color-text-dark);
+  background-color: transparent;
+  border-color: var(--color-brand-green);
+}
+
+.accent-light {
+  color: var(--color-brand-green);
+}
+.accent-dark {
+  color: var(--color-brand-dark-green);
+}
+.semibold {
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.section-title {
+  color: var(--color-text-dark);
+}
+.section-title.centered {
+  text-align: center;
+}
+
+section {
+  padding: 48px 0;
+}
+
+.hidden {
+  position: absolute;
+  left: -100000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+/* header section */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+}
+/* hero section*/
+.hero-section {
+  padding: 280px 0px;
+  text-align: center;
+  background-image: url('../images/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  /* background-color: linear-gradient(
+      127deg,
+      rgba(18, 18, 17, 0.78) 0%,
+      rgba(18, 18, 17, 0.6) 63.89%,
+      rgba(18, 18, 17, 0) 100%
+    ); */
+}
+
+.hero-title {
+  color: var(--color-text-light);
+}
+.hero-title .accent {
+  color: var(--color-brand-green);
+}
+
+/* advantages section */
+
+.advantages-section {
+  background-color: var(--color-brand-green);
+  padding: 16px 0;
+}
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.advantages-list-item {
+  font-weight: 300;
+  font-size: 20px;
+  color: var(--color-text-light);
+}
+
+/* tradition-section */
+
+.tradition-section {
+  padding-top: 96px;
+}
+
+.traditions-container {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.traditions-content {
+  max-width: 710px;
+}
+
+.traditions-text--limited {
+  max-width: 340px;
+}
+
+/* cookers section */
+
+.cookers-title {
+  max-width: 550px;
+  margin: 0 auto 80px;
+}
+
+.cookers-title::before,
+.cookers-title::after {
+  content: '';
+  display: block;
+  width: 352px;
+  height: 0px;
+  border: 2px solid var(--color-beige);
+}
+/* formats section*/
+.formats-list {
+  color: var(--color-text-light);
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.formats-list-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+
+.format-card {
+  border-radius: 16px;
+  background-color: wheat;
+  background: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    #31261a 100%
+  );
+  padding: 24px;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  height: 444px;
+}
+
+.carousel-button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--color-text-dark);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  fill: var(--color-text-dark);
+}
+
+.carousel-button:hover {
+  background-color: var(--color-text-dark);
+  fill: var(--color-text-light);
+}
+
+/* contact section*/
+#contact-section .action-text {
+  color: var(--color-brand-dark-green);
+}
+
+/* footer */
+
+.footer {
+  background-image: url('../images/footer-bg.png');
+  background-color: var(--color-text-dark);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.adress-link {
+  color: var(--color-text-light);
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: none;
+}
+.adress-link:hover {
+  color: var(--color-brand-green);
+}
+
+.adress-copyright {
+  font-size: 14px;
+  color: var(--color-ivory);
+}
+
+.adress-social {
+  fill: var(--color-text-light);
+}
+.adress-social:hover {
+  fill: var(--color-brand-green);
+}
